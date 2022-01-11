@@ -1,0 +1,35 @@
+
+header {
+    height: 130px;
+    color: white;
+    background-color: rgb(80, 77, 77);
+}
+nav .btn a{
+    color: white;
+}
+
+h1 {
+    border-radius: 5px 100px / 120px;
+    border: solid black;
+    background-color: rgb(165, 216, 216);
+    width: fit-content;
+}
+
+.btn{
+    border-radius: 15px;
+    border: solid;
+    margin: 3px;
+    
+}
+
+.nav-link {
+    /* color: black; */
+    margin: 4px;
+
+}
+
+.btn:hover {
+    background-color: rgb(165, 216, 216);
+    color: black;
+}
+
