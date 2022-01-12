@@ -4,7 +4,9 @@ const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
   try {
-    res.render("homepage",{logged_in});
+    
+    let logged_in = req.session.logged_in;
+    res.render("homepage", {logged_in} );
     
   } catch (err) {
     res.status(500).json(err);
@@ -24,5 +26,8 @@ router.get('/newuser', (req,res)=>{
   res.render('newAccount');
 })
 
+router.get('dashboard', (req, res) => {
+  res.render("homepage");
+})
 
 module.exports = router;
