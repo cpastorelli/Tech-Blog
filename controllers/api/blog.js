@@ -2,9 +2,6 @@ const router = require('express').Router();
 const { Blog } = require('../../models');
 
 
-router.get('/', )
-
-
 router.post('/createblog', async (req, res) => {
   try{
     console.log(req.session.user_id);
